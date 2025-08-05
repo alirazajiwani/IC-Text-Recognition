@@ -24,12 +24,13 @@ Functionalities:
 
 
 ## Code Execution Guide:
-1.	Run `PaddleOCR_PC.py`.
+1.	Run `PaddleOCR_PC.pynb`.
 2.	Output: `Listening on 5002...`.
-3.	Open and execute all cells in the PYNQ Jupyter notebook.
-4.	View the live camera feed.
-5.	Press BTN0 to capture a frame.
-6.	OCR results are shown on the PC and saved to a `.txt` file.
+3.	Open and execute all cells in the PYNQ Jupyter notebook `PaddleOCR_PYNQ`.
+4.	View the live camera feed in the notebook.
+5.	Press `BTN0` on the board to capture a frame from the live video feed.
+6.	Processing of the image will begun and it will be sent to Host PC.
+7.	OCR results are shown on the PC and saved to a `ocr_results.txt` file.
 
 ### Free port identification:
 
