@@ -1,14 +1,16 @@
 # IC-Text-Recognition
 
+
 ## System Architecture
 The system comprises two principal components communicating via a TCP/IP socket connection, with each playing distinct roles:
+
 ### Client: PYNQ Board
 Data acquisition and preprocessing unit.
 
 Functionalities:
-- Initializes and streams live video using the onboard camera.
-- Monitors BTN0 as a user-trigger mechanism.
-- Captures frames upon user input.
+- Initializes and streams live video using the microscopic camera.
+- Boards `BTN0` button as a user-trigger mechanism.
+- Captures frames upon user-trigger.
 - Applies a multi-stage image preprocessing pipeline to enhance OCR readiness.
 - Serializes and transmits the processed frame to the server.
 
@@ -20,7 +22,7 @@ Functionalities:
 - Deserializes the incoming image data.
 - Feeds the image into the PaddleOCR engine for text extraction.
 - Displays results with confidence scores in the terminal.
-- Appends output to a persistent file ocr_results.txt.
+- Appends output to a persistent file `ocr_results.txt`.
 
 ## Internet Access to the Board
 
@@ -34,6 +36,7 @@ Properties-> Sharing -> Check the `Allow other network users to connect through 
 **NOW THE BOARD HAS INTERNET ACCESS**
 
 ### To Check the new IP Address of the board: 
+Normally, when the board is used locally with no internet access, the default ip address of the board is `192.168.99.2`. Now due to the new local host ip address, a new ip address is allocated to the board by the PC. 
 
 1.	Download the `ipaddress.bat` file into the PC.
 2.	Run the bat file and wait for it to detect the ipaddress of the PYNQ board. 
