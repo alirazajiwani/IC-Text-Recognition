@@ -1,17 +1,41 @@
 # IC-Text-Recognition
 
-## How to run the code:
+## System Architecture
+The system comprises two principal components communicating via a TCP/IP socket connection, with each playing distinct roles:
+### Client: PYNQ Board
+Data acquisition and preprocessing unit.
 
-1. Run 'PaddleOCR_PC'.
-2. It will show 'Listenining on 5002...'
-3. After that, run the 'PaddleOCR_PYNQ' notebook.
-4. Serial connection will be build and OCR will begin in 'PaddleOCR_PC' after frame capturing.
+Functionalities:
+•	Initializes and streams live video using the onboard camera.
+•	Monitors BTN0 as a user-trigger mechanism.
+•	Captures frames upon user input.
+•	Applies a multi-stage image preprocessing pipeline to enhance OCR readiness.
+•	Serializes and transmits the processed frame to the server.
+
+### Server: Host PC
+Central processing and OCR analysis unit.
+
+Functionalities:
+•	Initializes a TCP server socket to accept client connections.
+•	Deserializes the incoming image data.
+•	Feeds the image into the PaddleOCR engine for text extraction.
+•	Displays results with confidence scores in the terminal.
+•	Appends output to a persistent file ocr_results.txt.
+
+
+## Code Execution Guide:
+1.	Run `PaddleOCR_PC.py`.
+2.	Output: `Listening on 5002...`.
+3.	Open and execute all cells in the PYNQ Jupyter notebook.
+4.	View the live camera feed.
+5.	Press BTN0 to capture a frame.
+6.	OCR results are shown on the PC and saved to a `.txt` file.
 
 ### Free port identification:
 
 Open Command Prompt and run,
 
-'netstat -aon | findstr :5000'	//replace 5000 with a port number you want to check
+`netstat -aon | findstr :5000`	//replace 5000 with a port number you want to check
 
 If it returns nothing, that port is likely free.
 If it shows a line, the port is in use.
