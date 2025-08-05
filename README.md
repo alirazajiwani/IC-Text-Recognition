@@ -4,6 +4,10 @@
 ## System Architecture
 The system comprises two principal components communicating via a TCP/IP socket connection, with each playing distinct roles:
 
+
+Output Text File<img width="2286" height="747" alt="image" src="https://github.com/user-attachments/assets/7f0a3d81-d2fa-4bb5-8a5a-b0457d87ac44" />
+
+
 ### Client: PYNQ Board
 Data acquisition and preprocessing unit.
 
