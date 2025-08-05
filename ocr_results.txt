@@ -1,0 +1,28 @@
+
+=== OCR for frame_1.png ===
+  Text: SILABS (Confidence: 0.96)
+  Text: CP2102 (Confidence: 0.95)
+  Text: FPCO3X (Confidence: 0.91)
+  Text: 2433+ (Confidence: 0.97)
+
+=== OCR for frame_2.png ===
+  Text: 33D420 (Confidence: 0.99)
+
+=== OCR for frame_3.png ===
+  Text: 74HC125 (Confidence: 0.99)
+  Text: GAiPA833 (Confidence: 0.97)
+
+=== OCR for frame_4.png ===
+  Text: AMS1117 (Confidence: 0.99)
+  Text: 3.3 XBLZ1 (Confidence: 0.93)
+
+=== OCR for frame_5.png ===
+  Text: SS6A48H (Confidence: 1.00)
+  Text: LM324 (Confidence: 0.99)
+
+=== OCR for frame_6.png ===
+  Text: 33D135 (Confidence: 0.99)
+
+=== OCR for frame_7.png ===
+  Text: RCWL-9300C (Confidence: 0.99)
+  Text: 20230401 (Confidence: 1.00)
