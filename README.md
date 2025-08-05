@@ -5,7 +5,9 @@
 The system comprises two principal components communicating via a TCP/IP socket connection, with each playing distinct roles:
 
 
-Output Text File<img width="2286" height="747" alt="image" src="https://github.com/user-attachments/assets/7f0a3d81-d2fa-4bb5-8a5a-b0457d87ac44" />
+
+Output Text File<img width="2286" height="747" alt="image" src="https://github.com/user-attachments/assets/c5e1cd89-7728-4948-8abb-75c7072de969" />
+
 
 
 ### Client: PYNQ Board
