@@ -6,7 +6,7 @@ The system comprises two principal components communicating via a TCP/IP socket 
 
 
 
-Output Text File<img width="2286" height="747" alt="image" src="https://github.com/user-attachments/assets/c5e1cd89-7728-4948-8abb-75c7072de969" />
+<img width="2286" height="747" alt="image" src="https://github.com/user-attachments/assets/c5e1cd89-7728-4948-8abb-75c7072de969" />
 
 
 
