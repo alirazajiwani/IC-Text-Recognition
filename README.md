@@ -11,8 +11,8 @@ The system comprises two principal components communicating via a TCP/IP socket 
 ## Internet Access to the Board
 
 1.	Power up the board with PYNQ image.
-2.	Press `Windows+R` and type `ncpa.cpl` and Enter.
-3.	If there is no other connection to the PC/Laptop than the Internet connection and Ethernet (PYNQ board) then allow mobile hotspot on the laptop to enable the drop-down menu in the `sharing section` in properties menu.
+2.	Press `Windows+R` on the HOST PC and type `ncpa.cpl` and Enter.
+3.	If there is no connection to the PC/Laptop other than Internet connection and Ethernet (PYNQ board) then allow `mobile hotspot` on the PC to enable the drop-down menu in the `sharing section` in properties menu.
 4.	Right click on the the connection from you have internet access. Go to:
 Properties-> Sharing -> Check the `Allow other network users to connect through the computer's internet connection`, And press `OK`.
 6.	Check the ethernet (connected to board) ipv4 address through properties. It should be `192.168.137.1`.
@@ -20,10 +20,10 @@ Properties-> Sharing -> Check the `Allow other network users to connect through 
 **NOW THE BOARD HAS INTERNET ACCESS**
 
 ### To Check the new IP Address of the board: 
-Normally, when the board is used locally with no internet access, the default ip address of the board is `192.168.99.2`. Now due to the new local host ip address, a new ip address is allocated to the board by the PC. 
+Normally, when the board is used locally with no internet access, the default ip address of the board is `192.168.99.2`. But, due to the new ipv4 address alotted to the HOST PC, a new ip address is given to the board by the PC. 
 
 1.	Download the `ipaddress.bat` file into the PC.
-2.	Run the bat file and wait for it to detect the ipaddress of the PYNQ board. 
+2.	Run the `.bat` file and wait for it to detect the ipaddress of the PYNQ board. 
 3.	Type the detected ipaddress on your web browser and access the jupyter notebook. 
 4.	Verify the internet access by typing `ping goolge.com` in terminal.
 
