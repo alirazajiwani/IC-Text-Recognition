@@ -5,30 +5,8 @@
 The system comprises two principal components communicating via a TCP/IP socket connection, with each playing distinct roles:
 
 
-
 <img width="2286" height="747" alt="image" src="https://github.com/user-attachments/assets/c5e1cd89-7728-4948-8abb-75c7072de969" />
 
-
-
-### Client: PYNQ Board
-Data acquisition and preprocessing unit.
-
-Functionalities:
-- Initializes and streams live video using the microscopic camera.
-- Boards `BTN0` button as a user-trigger mechanism.
-- Captures frames upon user-trigger.
-- Applies a multi-stage image preprocessing pipeline to enhance OCR readiness.
-- Serializes and transmits the processed frame to the server.
-
-### Server: Host PC
-Central processing and OCR analysis unit.
-
-Functionalities:
-- Initializes a TCP server socket to accept client connections.
-- Deserializes the incoming image data.
-- Feeds the image into the PaddleOCR engine for text extraction.
-- Displays results with confidence scores in the terminal.
-- Appends output to a persistent file `ocr_results.txt`.
 
 ## Internet Access to the Board
 
